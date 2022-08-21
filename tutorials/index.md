@@ -1,3 +1,7 @@
-# hello
+---
+aside: false
+---
 
-lorem ipsum text
+# LearnVue Tutorial Demos
+
+<DemoList />

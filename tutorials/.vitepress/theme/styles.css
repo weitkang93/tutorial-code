@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --vp-c-black-soft: #15181e;
+  --vp-c-black: #15181e;
+}
+
+@media (min-width: 960px) {
+  .VPNav {
+    background: transparent !important;
+  }
+}

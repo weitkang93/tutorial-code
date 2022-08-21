@@ -1,5 +1,5 @@
 ---
-layout: doc
+aside: false
 ---
 
 <script setup>
@@ -9,7 +9,3 @@ import App from './src/App.vue'
 # Wordle Clone
 
 <App class='mt-16'/>
-
-## oh cool does this work?
-
-lorem ipsum

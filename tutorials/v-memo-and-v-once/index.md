@@ -1,7 +1,21 @@
+---
+aside: false
+---
+
 <script setup>
 import VMemoExample from './VMemoExample.vue'
+import VOnceExample from './VOnceExample.vue'
+
 </script>
 
 # V-Memo + V-Once Example
 
-<VMemoExample :style='{marginTop: "50px"}'/>
+## `v-memo`
+
+<VMemoExample class='mt-16'/>
+
+## `v-once`
+
+This will never re-render.
+
+<VOnceExample class='mt-16'/>

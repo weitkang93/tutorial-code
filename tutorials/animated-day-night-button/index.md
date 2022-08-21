@@ -13,4 +13,6 @@ import DarkModeToggle from './DarkModeToggle.vue'
 This does not actually change the theme, it just animates the button.
 :::
 
-<DarkModeToggle class="mt-16"/>
+<div class='flex justify-center mt-16 '>
+<DarkModeToggle />
+</div>

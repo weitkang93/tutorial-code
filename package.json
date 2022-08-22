@@ -1,9 +1,5 @@
 {
   "private": true,
-  "workspaces": [
-    "tutorials/*",
-    "demo-site"
-  ],
   "scripts": {
     "dev": "vitepress dev tutorials",
     "build": "vitepress build tutorials"

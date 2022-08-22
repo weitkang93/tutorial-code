@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+  middleware: ['auth'],
+})
 const email = ref('')
 const password = ref('')
 const isSignUp = ref(false)
@@ -25,7 +28,7 @@ const login = async () => {
 onMounted(() => {
   watchEffect(() => {
     if (user.value) {
-      navigateTo('/feed')
+      navigateTo('/notes')
     }
   })
 })

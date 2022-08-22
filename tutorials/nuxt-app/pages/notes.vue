@@ -2,19 +2,18 @@
 definePageMeta({
   middleware: ['auth'],
 })
-
 const user = useSupabaseUser()
-
-const { data: notes } = useFetch('/api/notes', {
-  key: `notes ${user.value.id}`,
-  headers: useRequestHeaders(['cookie']),
-})
 onMounted(() => {
   watchEffect(() => {
     if (!user.value) {
       navigateTo('/')
     }
   })
+})
+
+const { data: notes } = await useFetch('/api/notes', {
+  key: `notes for ${user.value.id}`,
+  headers: useRequestHeaders(['cookie']),
 })
 </script>
 <template>

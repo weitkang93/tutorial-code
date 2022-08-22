@@ -6,7 +6,6 @@ const email = ref('')
 const password = ref('')
 const isSignUp = ref(false)
 const client = useSupabaseClient()
-const user = useSupabaseUser()
 const signUp = async () => {
   const { user, error } = await client.auth.signUp({
     email: email.value,
@@ -25,6 +24,7 @@ const login = async () => {
   console.log('error', error)
 }
 
+const user = useSupabaseUser()
 onMounted(() => {
   watchEffect(() => {
     if (user.value) {
@@ -33,6 +33,7 @@ onMounted(() => {
   })
 })
 </script>
+
 <template>
   <div>
     <form
